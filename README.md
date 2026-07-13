@@ -54,3 +54,27 @@ The server will start on port `3030` by default.
   ```http
   GET /health
   ```
+
+# Logging
+
+This project uses **pastel-logger** for beautiful, readable terminal output during development and production.
+
+If you're looking for a lightweight logger with colorful formatting, check it out:
+
+```bash
+npm install pastel-logger
+```
+
+GitHub:
+https://github.com/PAINFUEG0/Pastel-logger
+
+npm:
+https://www.npmjs.com/package/pastel-logger
+
+---
+
+# Notes
+
+- FFmpeg must be installed before running the server.
+- Self-hosting is recommended for production workloads.
+- The public instance is intended for testing and development only.
