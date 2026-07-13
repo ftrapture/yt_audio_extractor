@@ -16,7 +16,7 @@ const address = "0.0.0.0";
 const port = 3030
 const muxedCache = new Map();
 const audioCache = new Map();
-const logger = new Logger({ format: "[DD-MM-YYYY hh:mm:ss]" });
+const logger = new Logger();
 
 const RATE_LIMIT = 15;
 const RATE_WINDOW_MS = 1000;
@@ -734,8 +734,8 @@ function toPlainFormat(format) {
 
 function readplayingStatus(playerResponse) {
   return {
-    status: playerResponse.playingStatusStatus?.status ?? null,
-    reason: playerResponse.playingStatusStatus?.reason ?? null,
+    status: playerResponse?.playabilityStatus?.status ?? null,
+    reason: playerResponse?.playabilityStatus?.reason ?? null,
   };
 }
 
