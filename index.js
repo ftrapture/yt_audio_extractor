@@ -13,7 +13,7 @@ import {
 } from "./src/index.js";
 
 const address = "0.0.0.0";
-const port = 3030
+const port = 3030;
 const muxedCache = new Map();
 const audioCache = new Map();
 const logger = new Logger();
