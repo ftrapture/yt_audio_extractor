@@ -1,0 +1,25 @@
+{
+  "name": "yt-cipher",
+  "version": "0.1.0",
+  "description": "YouTube googlevideo signature and n-parameter solver based on player JS extraction.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "api": "node index.js",
+    "test:audio": "node ./scripts/test-audio-headers.js",
+    "test:muxed": "node ./scripts/test-muxed-audio.js",
+    "test:tv": "node ./scripts/test-tvhtml5.js",
+    "solve": "node ./scripts/solve-url.js"
+  },
+  "dependencies": {
+    "astring": "^1.9.0",
+    "meriyah": "^6.1.4",
+    "pastel-logger": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
